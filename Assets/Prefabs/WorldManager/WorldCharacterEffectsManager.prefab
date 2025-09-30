@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2868346958027542611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6714942661982304052}
+  - component: {fileID: 4781172644966706272}
+  m_Layer: 0
+  m_Name: WorldCharacterEffectsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6714942661982304052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868346958027542611}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4781172644966706272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868346958027542611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd4e6f2d77f94c74a8d7c776d2585957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSplatterVFX: {fileID: 115518409909323494, guid: 40c4a9c669a1f104b9536f2099666ffd,
+    type: 3}
+  criticalBloodSplatterVFX: {fileID: 6902391003308918340, guid: e956891c61bb925439998e4477253a37,
+    type: 3}
+  healingFlaskVFX: {fileID: 1055585006069982, guid: ab4ec786ecc97794a898a27a199cf587,
+    type: 3}
+  takeDamageEffect: {fileID: 11400000, guid: 2e58309461fc4144bac8ac7c6deec831, type: 2}
+  takeBlockedDamageEffect: {fileID: 11400000, guid: 59eb54f30f7626845af4eaaba38d66c8,
+    type: 2}
+  takeCriticalDamageEffect: {fileID: 11400000, guid: 9e42981695d49c74988e0098e8370457,
+    type: 2}
+  twoHandingEffect: {fileID: 11400000, guid: f5154855f2739454b85d8376a5c3ddb4, type: 2}
+  instanceEffects:
+  - {fileID: 11400000, guid: 121e943e8f3229c49aef5c67d9495f7e, type: 2}
+  - {fileID: 11400000, guid: 2e58309461fc4144bac8ac7c6deec831, type: 2}
+  - {fileID: 11400000, guid: 59eb54f30f7626845af4eaaba38d66c8, type: 2}
+  - {fileID: 11400000, guid: 9e42981695d49c74988e0098e8370457, type: 2}
+  staticEffects:
+  - {fileID: 11400000, guid: f5154855f2739454b85d8376a5c3ddb4, type: 2}

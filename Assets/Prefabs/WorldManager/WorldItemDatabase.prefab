@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7569518395416775187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7862230099802657326}
+  - component: {fileID: 4233378948039488623}
+  m_Layer: 0
+  m_Name: WorldItemDatabase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7862230099802657326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7569518395416775187}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4233378948039488623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7569518395416775187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388e93d8804034f46946d6975de81db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unarmedWeapon: {fileID: 11400000, guid: 1f0a3a596e60a934f9c00b43e3c0562e, type: 2}
+  pickUpItemPrefab: {fileID: 4019039584287686371, guid: 6e14ccbaeb980f34db93d352016dc4b7,
+    type: 3}
+  weapons:
+  - {fileID: 11400000, guid: 1f0a3a596e60a934f9c00b43e3c0562e, type: 2}
+  - {fileID: 11400000, guid: 261e291df710a3d4e85f4722009db803, type: 2}
+  - {fileID: 11400000, guid: 84dfbc02c721d2b4fb19201ca7d86ad2, type: 2}
+  - {fileID: 11400000, guid: 49dd9b5a0e611284a9912ea6d8bb71ad, type: 2}
+  - {fileID: 11400000, guid: 42b186ebb3b3b094a9a094cb26fcdfdf, type: 2}
+  - {fileID: 11400000, guid: a238691a5b125794c8cb3279ab522660, type: 2}
+  - {fileID: 11400000, guid: eb6ab29d5c0a8424b8653e3b60638cb1, type: 2}
+  - {fileID: 11400000, guid: 1f0a3a596e60a934f9c00b43e3c0562e, type: 2}
+  headEquipment:
+  - {fileID: 11400000, guid: 0b4f313d98cc12748868586409085b4e, type: 2}
+  - {fileID: 11400000, guid: b62a3fe040884c04b85227bf8a57bdb4, type: 2}
+  bodyEquipment:
+  - {fileID: 11400000, guid: 5d719b8a38675594b8d3c4866546ee88, type: 2}
+  handEquipment:
+  - {fileID: 11400000, guid: fe472d74043ce4b4489987fabfe1dbb5, type: 2}
+  legEquipment:
+  - {fileID: 11400000, guid: 1b37da28b830acb4da16e66c955ea5b1, type: 2}
+  ashesOfWar:
+  - {fileID: 11400000, guid: 0fd27f1369530bb43abe98927777be8b, type: 2}
+  quickSlotItems:
+  - {fileID: 11400000, guid: f4414b9555b2813478ca1e40631fac6c, type: 2}
+  - {fileID: 11400000, guid: 2c888f307b8a9c742903a786aa445fb1, type: 2}
