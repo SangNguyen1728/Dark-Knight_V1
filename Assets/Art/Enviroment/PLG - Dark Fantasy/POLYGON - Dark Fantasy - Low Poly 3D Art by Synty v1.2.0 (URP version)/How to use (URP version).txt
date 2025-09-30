@@ -1,0 +1,13 @@
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ This asset was shared by https://unityassetcollection.com
+
+ Contact us:
+ - Email: unityassetcollection@gmail.com
+ - Telegram: @assetcollection or https://t.me/assetcollection	
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+This asset only works with the Universal Render Pipeline (URP). Please install this package if your project hasn't installed it yet.
+For installation and usage instructions, read this article: https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/InstallingAndConfiguringURP.html
+
+Thanks!
