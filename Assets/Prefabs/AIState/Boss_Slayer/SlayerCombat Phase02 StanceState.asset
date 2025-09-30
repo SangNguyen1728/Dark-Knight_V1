@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b365b56fd4db16e4d8910366a98b5c23, type: 3}
+  m_Name: SlayerCombat Phase02 StanceState
+  m_EditorClassIdentifier: 
+  aiCharacterAttacks:
+  - {fileID: 11400000, guid: fb247dd3f9f8f0640a20c6b3b157b117, type: 2}
+  - {fileID: 11400000, guid: f7984f2879ce2bf4da8734ff45174797, type: 2}
+  - {fileID: 11400000, guid: b7e1248d5f6829f4dbb817368392cd45, type: 2}
+  canPerformCombo: 0
+  chanceToPerformCombo: 25
+  maximumEngagementDistance: 3
