@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1a3751b479c344987c01c2a95afbbe, type: 3}
+  m_Name: UnArmed
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemIcon: {fileID: 0}
+  itemDescription: 
+  itemID: 0
+  weaponAnimator: {fileID: 22100000, guid: 33d0a1b0aa60c074a83df4f0e17132ad, type: 2}
+  weaponModelType: 0
+  weaponModel: {fileID: 5032047412191445111, guid: cdbb9c9a3054b4741a2fbaf258df9c62,
+    type: 3}
+  weaponClass: 4
+  strengthREQ: 0
+  dexREQ: 0
+  intREQ: 0
+  faithREQ: 0
+  physicalDamage: 0
+  magicDamage: 0
+  fireDamage: 0
+  hollyDamage: 0
+  lightningDamage: 0
+  poiseDamage: 0
+  light_Attack_01_notifier: 1
+  light_Attack_02_notifier: 1.1
+  light_Attack_03_notifier: 1.2
+  light_Attack_04_notifier: 1.3
+  heavy_Attack_01_notifier: 1.4
+  heavy_Attack_02_notifier: 1.5
+  heavy_Attack_03_notifier: 1.6
+  charge_Attack_01_notifier: 2
+  charge_Attack_02_notifier: 2.1
+  charge_Attack_03_notifier: 2.2
+  running_Attack_01_Modifier: 1.1
+  rolling_Attack_01_Modifier: 1.1
+  backstep_Attack_01_Modifier: 1.1
+  baseStaminaCost: 0
+  lightAttackStamiaCostMultiplier: 1
+  heavyAttackStamiaCostMultiplier: 1.3
+  chargedAttackStamiaCostMultiplier: 1.5
+  runningAttackStamiaCostMultiplier: 1.1
+  rollingAttackStamiaCostMultiplier: 1.1
+  backstepAttackStamiaCostMultiplier: 1.1
+  physicalBaseDamageAbsorption: 50
+  magicBaseDamageAbsorption: 50
+  fireBaseDamageAbsorption: 50
+  holyBaseDamageAbsorption: 50
+  lightningBaseDamageAbsorption: 50
+  stability: 50
+  oh_RB_Action: {fileID: 11400000, guid: eadd0e29ffd2ec1478291fd0ffdb2c20, type: 2}
+  oh_RT_Action: {fileID: 11400000, guid: 34728823706a15640aadc99fd42c9197, type: 2}
+  oh_LB_Action: {fileID: 11400000, guid: 74271b94875bded45bfbf23a6630b8e2, type: 2}
+  whooshes:
+  - {fileID: 8300000, guid: 0e9bca6dd55d7e541a865752da6415f5, type: 3}
+  - {fileID: 8300000, guid: 28406bf68add30e4e89d6cd063fb84e6, type: 3}
+  - {fileID: 8300000, guid: c266e86e5ec11e344bf66dede26cbc46, type: 3}
+  - {fileID: 8300000, guid: 90fb91c5d9f18df4183363d36d921429, type: 3}
+  blockingSFX: []

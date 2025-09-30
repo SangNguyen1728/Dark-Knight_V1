@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1a3751b479c344987c01c2a95afbbe, type: 3}
+  m_Name: GoldenGreatSword
+  m_EditorClassIdentifier: 
+  itemName: GoldenGreatSword
+  itemIcon: {fileID: 21300000, guid: d86ee0e8f3a4d9343b1bfa6e54cb5252, type: 3}
+  itemDescription: A Golden Great Sword
+  itemID: 0
+  weaponModel: {fileID: 355942104995809255, guid: e1891ae3106c3dd4b92db3989e822a51,
+    type: 3}
+  strengthREQ: 0
+  dexREQ: 0
+  intREQ: 0
+  faithREQ: 0
+  physicalDamage: 0
+  magicDamage: 0
+  fireDamage: 0
+  hollyDamage: 0
+  lightningDamage: 0
+  poiseDamage: 10
+  baseStaminaCost: 20
