@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea621b7e54455244f82e67a9e8bc0af1, type: 3}
   m_Name: ManaFlask Item
   m_EditorClassIdentifier: 
-  itemName: Health Item
+  itemName: Mana Item
   itemIcon: {fileID: 21300000, guid: 0ea049fafa0665f47948f7032eacdd53, type: 3}
   itemDescription: 
   itemID: 18

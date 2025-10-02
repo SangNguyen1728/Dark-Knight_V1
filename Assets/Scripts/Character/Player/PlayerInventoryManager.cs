@@ -14,7 +14,7 @@ public class PlayerInventoryManager : CharacterInventoryManager
     public int rightHandWeaponIndex = 0;
     public WeaponItem[] weaponInLeftHandSlot = new WeaponItem[7];
     public int leftHandWeaponIndex = 0;
-    public QuickSlotItem[] quickSlotItemInQuickSlots = new QuickSlotItem[5];
+    public QuickSlotItem[] quickSlotItemInQuickSlots = new QuickSlotItem[3];
     public int quickSlotItemIndex = 0;
     public QuickSlotItem currentQuickSlotItem;
 

@@ -656,6 +656,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6524375915250188973, guid: 9a193e7d53102184d8733e2006e8d608,
         type: 3}
+      propertyPath: itemsInInventory.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -6524375915250188973, guid: 9a193e7d53102184d8733e2006e8d608,
+        type: 3}
+      propertyPath: 'itemsInInventory.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b62a3fe040884c04b85227bf8a57bdb4,
+        type: 2}
+    - target: {fileID: -6524375915250188973, guid: 9a193e7d53102184d8733e2006e8d608,
+        type: 3}
+      propertyPath: 'itemsInInventory.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d719b8a38675594b8d3c4866546ee88,
+        type: 2}
+    - target: {fileID: -6524375915250188973, guid: 9a193e7d53102184d8733e2006e8d608,
+        type: 3}
+      propertyPath: 'itemsInInventory.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9734152a02c1698458ca8df6f59fa278,
+        type: 2}
+    - target: {fileID: -6524375915250188973, guid: 9a193e7d53102184d8733e2006e8d608,
+        type: 3}
+      propertyPath: 'itemsInInventory.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: fe472d74043ce4b4489987fabfe1dbb5,
+        type: 2}
+    - target: {fileID: -6524375915250188973, guid: 9a193e7d53102184d8733e2006e8d608,
+        type: 3}
       propertyPath: weaponInLeftHandSlot.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -795,17 +824,17 @@ PrefabInstance:
     - target: {fileID: 4811111300083466716, guid: 9a193e7d53102184d8733e2006e8d608,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5480336549645523877, guid: 9a193e7d53102184d8733e2006e8d608,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5480336549645523877, guid: 9a193e7d53102184d8733e2006e8d608,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

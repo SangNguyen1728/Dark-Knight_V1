@@ -38,13 +38,13 @@ public class PlayerUIEquipmentManager : MonoBehaviour
     [Header("Quick SLot")]
     [SerializeField] Image quickSlot01EquipmentSlot;
     [SerializeField] TextMeshProUGUI quickSlot01Count;
-    private Button quickSlotButton01;
+    private Button quickSlot01Button;
     [SerializeField] Image quickSlot02EquipmentSlot;
     [SerializeField] TextMeshProUGUI quickSlot02Count;
-    private Button quickSlotButton02;
+    private Button quickSlot02Button;
     [SerializeField] Image quickSlot03EquipmentSlot;
     [SerializeField] TextMeshProUGUI quickSlot03Count;
-    private Button quickSlotButton03;
+    private Button quickSlot03Button;
 
 
     [Header("Equipment Inventory")]
@@ -69,9 +69,9 @@ public class PlayerUIEquipmentManager : MonoBehaviour
         handEquipmentSlotButton = handEquipmentSlot.GetComponentInParent<Button>(true);
         legEquipmentSlotButton= legEquipmentSlot.GetComponentInParent<Button>(true);
 
-        quickSlotButton01 = quickSlot01EquipmentSlot.GetComponentInParent<Button>(true);
-        quickSlotButton02 = quickSlot02EquipmentSlot.GetComponentInParent<Button>(true);
-        quickSlotButton03 = quickSlot03EquipmentSlot.GetComponentInParent<Button>(true);
+        quickSlot01Button = quickSlot01EquipmentSlot.GetComponentInParent<Button>(true);
+        quickSlot02Button = quickSlot02EquipmentSlot.GetComponentInParent<Button>(true);
+        quickSlot03Button = quickSlot03EquipmentSlot.GetComponentInParent<Button>(true);
     }
     public void OpenEquipmentManagerMenu()
     {
@@ -105,9 +105,9 @@ public class PlayerUIEquipmentManager : MonoBehaviour
         handEquipmentSlotButton.enabled= isEnabled;
         legEquipmentSlotButton.enabled= isEnabled;
 
-        quickSlotButton01.enabled = isEnabled;
-        quickSlotButton02.enabled = isEnabled;
-        quickSlotButton03.enabled = isEnabled;
+        quickSlot01Button.enabled = isEnabled;
+        quickSlot02Button.enabled = isEnabled;
+        quickSlot03Button.enabled = isEnabled;
     }
     public void SelectLastSelectedEquipmentSlot()
     {
@@ -146,13 +146,13 @@ public class PlayerUIEquipmentManager : MonoBehaviour
                 lastSelectedButton = handEquipmentSlotButton;
                 break;
             case EquipmentType.QuickSlot01:
-                lastSelectedButton = quickSlotButton01;
+                lastSelectedButton = quickSlot01Button;
                 break;
             case EquipmentType.QuickSlot02:
-                lastSelectedButton = quickSlotButton02;
+                lastSelectedButton = quickSlot02Button;
                 break;
             case EquipmentType.QuickSlot03:
-                lastSelectedButton = quickSlotButton03;
+                lastSelectedButton = quickSlot03Button;
                 break;
 
             default:
@@ -356,6 +356,8 @@ public class PlayerUIEquipmentManager : MonoBehaviour
             quickSlot02Count.enabled = false;
         }
 
+
+        
         QuickSlotItem quickSlotEquipment03 = player.playerInventoryManager.quickSlotItemInQuickSlots[2];
 
         if (quickSlotEquipment03 != null)
@@ -886,6 +888,7 @@ public class PlayerUIEquipmentManager : MonoBehaviour
                 }
 
                 player.playerInventoryManager.quickSlotItemInQuickSlots[0] = null;
+
                 if (player.playerInventoryManager.quickSlotItemIndex == 0)
                     player.playerNetworkManager.currentQuickSlotItemID.Value = -1;
                     break;

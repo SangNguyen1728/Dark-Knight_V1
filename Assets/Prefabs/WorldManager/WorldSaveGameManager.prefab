@@ -52,6 +52,7 @@ MonoBehaviour:
   currentCharacterData:
     SenceIndex: 1
     CharacterName: Character
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -60,18 +61,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -84,9 +73,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot01:
     SenceIndex: 1
     CharacterName: Character01
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -95,18 +97,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -119,9 +109,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot02:
     SenceIndex: 1
     CharacterName: Character02
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -130,18 +133,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -154,9 +145,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot03:
     SenceIndex: 1
     CharacterName: Character03
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -165,18 +169,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -189,9 +181,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot04:
     SenceIndex: 1
     CharacterName: Character04
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -200,18 +205,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -224,9 +217,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot05:
     SenceIndex: 1
     CharacterName: Character05
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -235,18 +241,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -259,9 +253,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot06:
     SenceIndex: 1
     CharacterName: Character
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -270,18 +277,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -294,9 +289,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot07:
     SenceIndex: 1
     CharacterName: Character
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -305,18 +313,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -329,9 +325,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot08:
     SenceIndex: 1
     CharacterName: Character
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -340,18 +349,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -364,9 +361,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot09:
     SenceIndex: 1
     CharacterName: Character
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -375,18 +385,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -399,9 +397,22 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0
   characterSlot10:
     SenceIndex: 1
     CharacterName: Character
+    isMale: 1
     secondPlayed: 0
     xPosition: 0
     yPosition: 0
@@ -410,18 +421,6 @@ MonoBehaviour:
     currentStamina: 0
     vitality: 0
     endurance: 0
-    headEquiment: 0
-    bodyEquiment: 0
-    legEquiment: 0
-    handEquiment: 0
-    rightWeaponIndex: 0
-    rightWeapon01: 0
-    rightWeapon02: 0
-    rightWeapon03: 0
-    leftWeaponIndex: 0
-    leftWeapon01: 0
-    leftWeapon02: 0
-    leftWeapon03: 0
     siteOfGrace:
       keys: 
       values: 
@@ -434,3 +433,15 @@ MonoBehaviour:
     worldItemsLooted:
       keys: 
       values: 
+    headEquipment: 0
+    bodyEquipment: 0
+    legEquipment: 0
+    handEquipment: 0
+    rightWeaponIndex: 0
+    rightWeapon01: 0
+    rightWeapon02: 0
+    rightWeapon03: 0
+    leftWeaponIndex: 0
+    leftWeapon01: 0
+    leftWeapon02: 0
+    leftWeapon03: 0

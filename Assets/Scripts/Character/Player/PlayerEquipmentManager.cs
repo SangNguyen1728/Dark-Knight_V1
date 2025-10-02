@@ -121,8 +121,8 @@ public class PlayerEquipmentManager : CharacterEquipmentManager
     //    if(equipmentNewItem)
     //    {
     //        equipmentNewItem = false;
-    //        EquipArmor();
-    //    }
+    //      EquipArmor();
+    //   }
     //}
     public void EquipArmor()
     {
@@ -143,7 +143,7 @@ public class PlayerEquipmentManager : CharacterEquipmentManager
         player.playerInventoryManager.quickSlotItemIndex += 1;
 
         // if my index is out of bonds, reset  it to position 1
-        if (player.playerInventoryManager.quickSlotItemIndex < 0 || player.playerInventoryManager.quickSlotItemIndex > 4)
+        if (player.playerInventoryManager.quickSlotItemIndex < 0 || player.playerInventoryManager.quickSlotItemIndex > 2)
         {
             player.playerInventoryManager.quickSlotItemIndex = 0;
 
@@ -194,6 +194,7 @@ public class PlayerEquipmentManager : CharacterEquipmentManager
         //        return;
         //    }
         //}
+
         if (player.playerInventoryManager.quickSlotItemInQuickSlots[player.playerInventoryManager.quickSlotItemIndex] != null)
         {
             selectedItem = player.playerInventoryManager.quickSlotItemInQuickSlots[player.playerInventoryManager.quickSlotItemIndex];
@@ -207,7 +208,7 @@ public class PlayerEquipmentManager : CharacterEquipmentManager
             player.playerNetworkManager.currentQuickSlotItemID.Value = -1;
         }
 
-        if (selectedItem == null && player.playerInventoryManager.quickSlotItemIndex <= 4)
+        if (selectedItem == null && player.playerInventoryManager.quickSlotItemIndex <= 2)
         {
             SwitchQuickSlotItem();
         }

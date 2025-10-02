@@ -564,6 +564,10 @@ public class PlayerInputManager : MonoBehaviour
             {
                 return;
             }
+            if (player.isPerformingAction)
+                return;
+            if (player.playerCombatManager.isUsingItem)
+                return;
 
             player.playerEquipmentManager.SwitchQuickSlotItem();
         }
