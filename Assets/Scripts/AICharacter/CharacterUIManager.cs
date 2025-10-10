@@ -13,4 +13,12 @@ public class CharacterUIManager : MonoBehaviour
         characterHPBar.oldHealthValue = oldValue;
         characterHPBar.SetStat(newValue);
     }
+
+    public void ResetCharacterHPBar()
+    {
+        if (characterHPBar == null)
+            return;
+
+        characterHPBar.currentDamageTaken = 0;
+    }
 }

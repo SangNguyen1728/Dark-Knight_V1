@@ -110,6 +110,8 @@ public class FlaskItem : QuickSlotItem
                 player.playerNetworkManager.currentStamina.Value += flaskRestoration;
                 player.playerNetworkManager.remainingManaFlasks.Value -= 1; // For Future: change Stamina to focus poitn
             }
+
+            PlayerUIManager.instance.playerHudManager.SetQuickSlotItemQuickSlotIcon(player.playerInventoryManager.currentQuickSlotItem);
         }
 
         if (healthFlask && player.playerNetworkManager.remainingHealthFlasks.Value <= 0)

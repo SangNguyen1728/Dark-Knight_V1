@@ -125,9 +125,9 @@ public class PlayerHudManager : MonoBehaviour
 
     }
 
-    public void SetQuickSlotItemQuickSlotIcon(int itemID)
+    public void SetQuickSlotItemQuickSlotIcon(QuickSlotItem quickSlotItem)
     {
-        QuickSlotItem quickSlotItem = WorldItemDatabase.Instance.GetQuickSlotItemByID(itemID);
+        
 
         if(quickSlotItem == null)
         {

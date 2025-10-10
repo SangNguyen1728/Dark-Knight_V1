@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: 
   itemIcon: {fileID: 0}
   itemDescription: 
-  itemID: 0
+  itemID: 11
   usableWeaponClasses: 00000000
   focusPointCost: 0
   staminaCost: 20

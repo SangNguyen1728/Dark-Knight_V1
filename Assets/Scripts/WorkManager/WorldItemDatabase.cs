@@ -90,6 +90,8 @@ public class WorldItemDatabase : MonoBehaviour
             items.Add(item);
         }
     }
+
+    // Item Database
     public Item GetItemByID(int ID)
     {
         return items.FirstOrDefault(item => item.itemID == ID);
@@ -128,4 +130,52 @@ public class WorldItemDatabase : MonoBehaviour
     {
         return quickSlotItems.FirstOrDefault(item => item.itemID == ID);
     }
+
+    // Item Serialization
+
+    public WeaponItem GetWeaponFromSerializedData(SerializzableWeapon serializableWeapon)
+    {
+        WeaponItem weapon = null;
+       
+        if(GetWeaponByID(serializableWeapon.itemID))
+            weapon = Instantiate(GetWeaponByID(serializableWeapon.itemID));
+
+        if (weapon == null)
+            return Instantiate(unarmedWeapon);
+
+        if(GetAshOfWarByID(serializableWeapon.ashOfWarID))
+        {
+            AshOfWar ashOfWar = Instantiate(GetAshOfWarByID(serializableWeapon.ashOfWarID));
+            weapon.ashOfWarAction = ashOfWar;
+        }
+
+        return weapon;
+    }
+
+    public FlaskItem GetFlaskFromSerializedData(SerializableFlasks serializableFlask)
+    {
+        FlaskItem flask = null;
+
+        if (GetQuickSlotItemByID(serializableFlask.itemID))
+        {
+            flask = Instantiate(GetQuickSlotItemByID(serializableFlask.itemID)) as FlaskItem; 
+        }
+
+        return flask;
+    }
+
+    public QuickSlotItem GetQuickSlotItemFromSerializedData(SerializableQuickSlotItem serializableQuickSlotItem)
+    {
+        QuickSlotItem quickSlotItem = null;
+
+        if (GetQuickSlotItemByID(serializableQuickSlotItem.itemID))
+        {
+            quickSlotItem = Instantiate(GetQuickSlotItemByID(serializableQuickSlotItem.itemID));
+            quickSlotItem.itemAmount = serializableQuickSlotItem.itemAmount;
+        }
+
+        return quickSlotItem;
+    }
+
+
 }

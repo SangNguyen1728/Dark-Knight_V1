@@ -39,20 +39,27 @@ public class AICharacterSpawner : MonoBehaviour
 
     public void ResetCharacter()
     {
-        if (instantiatedGameObject != null)
+        if (instantiatedGameObject == null)
         {
-            //instantiatedGameObject = Instantiate(characterGameObject);
-            instantiatedGameObject.transform.position = transform.position;
-            instantiatedGameObject.transform.rotation = transform.rotation;
-            //instantiatedGameObject.GetComponent<NetworkObject>().Spawn();
-            //WorldAIManager.instance.AddCharacterToSpawnCharacterList(instantiatedGameObject.GetComponent<AICharacterManager>());
-            aiCharacter.aiCharacterNetworkManager.currentHealth.Value = aiCharacter.aiCharacterNetworkManager.maxhealth.Value;
-
-           if(aiCharacter.isDead.Value)
-            {
-                aiCharacter.isDead.Value = false;
-                aiCharacter.characterAnimatorManager.PlayTargetActionAnimtion("Empty", false, false, true, true, true, true);
-            }
+            return;
         }
+
+        if (aiCharacter == null)
+            return;
+
+        //instantiatedGameObject = Instantiate(characterGameObject);
+        instantiatedGameObject.transform.position = transform.position;
+        instantiatedGameObject.transform.rotation = transform.rotation;
+        //instantiatedGameObject.GetComponent<NetworkObject>().Spawn();
+        //WorldAIManager.instance.AddCharacterToSpawnCharacterList(instantiatedGameObject.GetComponent<AICharacterManager>());
+        aiCharacter.aiCharacterNetworkManager.currentHealth.Value = aiCharacter.aiCharacterNetworkManager.maxhealth.Value;
+
+        if (aiCharacter.isDead.Value)
+        {
+            aiCharacter.isDead.Value = false;
+            aiCharacter.characterAnimatorManager.PlayTargetActionAnimtion("Empty", false, false, true, true, true, true);
+        }
+
+        aiCharacter.characterUIManager.ResetCharacterHPBar();
     }
 }

@@ -260,21 +260,21 @@ public class PlayerCombatManager : CharacterCombatManager
             PlayerCamera.instance.SetLockOnCameraTarget();
         }
     }
-    //public void EnableCanDoCombo()
-    //{
-    //    if(player.playerNetworkManager.isUsingRightHand.Value)
-    //    {
-    //        canComboWithMainHandWeapon = true;
-    //    }
-    //    else
-    //    {
-    //        // do for off hand (To Do Later)
-    //    }
-    //}
-    //public void DisableCanDoCombo()
-    //{
-    //    canComboWithMainHandWeapon = false;
-    //}
+    public void EnableCanDoCombo()
+    {
+        if(player.playerNetworkManager.isUsingRightHand.Value)
+        {
+           canComboWithMainHandWeapon = true;
+        }
+        else
+        {
+            // do for off hand (To Do Later)
+        }
+    }
+    public void DisableCanDoCombo()
+    {
+        canComboWithMainHandWeapon = false;
+    }
 
     public WeaponItem SelectWeaponToPerformAshOfWar()
     {

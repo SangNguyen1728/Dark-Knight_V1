@@ -1,5 +1,6 @@
 using UnityEngine;
 using Unity.Netcode;
+using UnityEngine.SceneManagement;
 public class PlayerUIManager : MonoBehaviour
 {
     public static PlayerUIManager instance;
@@ -26,7 +27,9 @@ public class PlayerUIManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+
         }
+       
 
         playerHudManager = GetComponentInChildren<PlayerHudManager>();
         playerUIPopUpManager = GetComponentInChildren<PlayerUIPopUpManager>();
@@ -37,6 +40,7 @@ public class PlayerUIManager : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
+        
     }
     private void Update()
     {

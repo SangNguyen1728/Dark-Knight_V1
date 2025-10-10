@@ -51,16 +51,32 @@ public class CharacterSaveData
     public int handEquipment;
 
     public int rightWeaponIndex;
-    public int rightWeapon01;
-    public int rightWeapon02;
-    public int rightWeapon03;
+    public SerializzableWeapon rightWeapon01;
+    public SerializzableWeapon rightWeapon02;
+    public SerializzableWeapon rightWeapon03;
 
     public int leftWeaponIndex;
-    public int leftWeapon01;
-    public int leftWeapon02;
-    public int leftWeapon03;
+    public SerializzableWeapon leftWeapon01;
+    public SerializzableWeapon leftWeapon02;
+    public SerializzableWeapon leftWeapon03;
+
+    public int quickSlotIndex;
+    public SerializableQuickSlotItem quickSlotItem01;
+    public SerializableQuickSlotItem quickSlotItem02;
+    public SerializableQuickSlotItem quickSlotItem03;
+
+    [Header("Inventory")]
+    public List<SerializzableWeapon> weaponsInInventory;
+    public List<SerializableQuickSlotItem> quickSlotItemInInventory;
+    public List<int> headEquipmentInInventory;
+    public List<int> bodyEquipmentInInventory;
+    public List<int> handEquipmentInInventory;
+    public List<int> legEquipmentInInventory;
+    
 
 
+    public int currentHealthFlaskRemaining = 3;           // For Health 
+    //public int currentForcusPointFlaskRemaining = 1;    // For Forcus Point(ToDo in future)
 
     public CharacterSaveData()
     {
@@ -68,5 +84,12 @@ public class CharacterSaveData
         bossesAwakened = new SerializableDictionary<int, bool>();
         bossesDefeated = new SerializableDictionary<int, bool>();
         worldItemsLooted = new SerializableDictionary<int, bool>();
+
+        weaponsInInventory = new List<SerializzableWeapon>();
+        quickSlotItemInInventory = new List<SerializableQuickSlotItem>();
+        headEquipmentInInventory = new List<int>();
+        bodyEquipmentInInventory = new List<int>();
+        handEquipmentInInventory = new List<int>();
+        legEquipmentInInventory = new List<int>();
     }
 }

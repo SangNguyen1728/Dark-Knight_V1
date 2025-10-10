@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -856,6 +857,23 @@ public class PlayerEquipmentManager : CharacterEquipmentManager
         player.playerBodyManager.EnableLowerBody();
     }
 
+    // Quick Slot
+    public void LoadQuickSlotEquipment(QuickSlotItem equipment)
+    {
+       if(equipment == null)
+        {
+            if(player.IsOwner)
+                player.playerNetworkManager.currentQuickSlotItemID.Value = -1;
+
+            player.playerInventoryManager.currentQuickSlotItem = null;
+            return;
+        }
+
+        player.playerInventoryManager.currentQuickSlotItem = equipment;
+
+        if (player.IsOwner)
+            player.playerNetworkManager.currentQuickSlotItemID.Value = equipment.itemID;
+    }
     private void InitializeWeaponSlots()
     {
         WeaponModelInstantiationSlot[] weaponSlots = GetComponentsInChildren<WeaponModelInstantiationSlot>();
@@ -930,11 +948,13 @@ public class PlayerEquipmentManager : CharacterEquipmentManager
             {
                 player.playerInventoryManager.rightHandWeaponIndex = -1;
                 selectedWeapon = WorldItemDatabase.Instance.unarmedWeapon;
+                player.playerInventoryManager.currentRightHandWeapon = selectedWeapon;
                 player.playerNetworkManager.currentRightHandWeaponID.Value = selectedWeapon.itemID;
             }
             else
             {
                 player.playerInventoryManager.rightHandWeaponIndex = firstWeaponPosion;
+                player.playerInventoryManager.currentRightHandWeapon = selectedWeapon;
                 player.playerNetworkManager.currentRightHandWeaponID.Value = firstWeapon.itemID;
             }
 
@@ -947,9 +967,9 @@ public class PlayerEquipmentManager : CharacterEquipmentManager
             if (player.playerInventoryManager.weaponInRightHandSlot[player.playerInventoryManager.rightHandWeaponIndex].itemID != WorldItemDatabase.Instance.unarmedWeapon.itemID)
             {
                 selectedWeapon = player.playerInventoryManager.weaponInRightHandSlot[player.playerInventoryManager.rightHandWeaponIndex];
-
-                player.playerNetworkManager.currentRightHandWeaponID.Value = player.playerInventoryManager.weaponInRightHandSlot[player.playerInventoryManager.rightHandWeaponIndex].itemID;
-
+                player.playerInventoryManager.currentRightHandWeapon = selectedWeapon;
+                //player.playerNetworkManager.currentRightHandWeaponID.Value = player.playerInventoryManager.weaponInRightHandSlot[player.playerInventoryManager.rightHandWeaponIndex].itemID;
+                player.playerNetworkManager.currentRightHandWeaponID.Value = selectedWeapon.itemID;
                 //player.playerNetworkManager.currentRightHandWeaponID.Value = selectedWeapon.itemID;
                 return;
             }
@@ -1025,11 +1045,13 @@ public class PlayerEquipmentManager : CharacterEquipmentManager
             {
                 player.playerInventoryManager.leftHandWeaponIndex = -1;
                 selectedWeapon = WorldItemDatabase.Instance.unarmedWeapon;
+                player.playerInventoryManager.currentLeftHandWeapon = selectedWeapon;
                 player.playerNetworkManager.currentLeftHandWeaponID.Value = selectedWeapon.itemID;
             }
             else
             {
                 player.playerInventoryManager.leftHandWeaponIndex = firstWeaponPosion;
+                player.playerInventoryManager.currentLeftHandWeapon = selectedWeapon;
                 player.playerNetworkManager.currentLeftHandWeaponID.Value = firstWeapon.itemID;
             }
 
@@ -1043,8 +1065,9 @@ public class PlayerEquipmentManager : CharacterEquipmentManager
             {
                 selectedWeapon = player.playerInventoryManager.weaponInLeftHandSlot[player.playerInventoryManager.leftHandWeaponIndex];
 
-                player.playerNetworkManager.currentLeftHandWeaponID.Value = player.playerInventoryManager.weaponInLeftHandSlot[player.playerInventoryManager.leftHandWeaponIndex].itemID;
-
+                player.playerInventoryManager.currentLeftHandWeapon = selectedWeapon;
+                //player.playerNetworkManager.currentLeftHandWeaponID.Value = player.playerInventoryManager.weaponInLeftHandSlot[player.playerInventoryManager.leftHandWeaponIndex].itemID;
+                player.playerNetworkManager.currentLeftHandWeaponID.Value = selectedWeapon.itemID;
                 //player.playerInventoryManager.currentLeftHandWeapon = selectedWeapon;
                 return;
             }

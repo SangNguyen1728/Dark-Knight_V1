@@ -284,4 +284,61 @@ public class WorldSaveGameManager : MonoBehaviour
     {
         return worldSceneIndex;
     }
+
+    public SerializzableWeapon GetSerializableWeaponFromWeaponItem(WeaponItem weapon)
+    {
+        SerializzableWeapon serializableWeapon = new SerializzableWeapon();
+
+        // Get Weapon ID
+        serializableWeapon.itemID = weapon.itemID;
+
+        // Get Ash of War ID if one is present(there should always be one by default)
+        if(weapon.ashOfWarAction != null)
+        {
+            serializableWeapon.ashOfWarID = weapon.ashOfWarAction.itemID;
+        }
+        else
+        {
+            // Using an invalid ID if there is no ash of war, so the value will be null if it tried to search for 1 using
+            serializableWeapon.ashOfWarID = -1;
+        }
+
+        return serializableWeapon;
+    }
+    public SerializableFlasks GetSerializableFlaskFromFlaskItem(FlaskItem flask)
+    {
+        SerializableFlasks serializableFlask = new SerializableFlasks();
+
+
+        if(flask != null)
+        {
+            serializableFlask.itemID = flask.itemID;
+        }
+        else
+        {
+            serializableFlask.itemID = -1;
+        }
+
+        return serializableFlask;
+    }
+
+    public SerializableQuickSlotItem GetSerializableQuickSlotItemFromQuickSlotItem(QuickSlotItem quickSlotItem)
+    {
+        SerializableQuickSlotItem serializableQuickSlotItem = new SerializableQuickSlotItem();
+
+        if(quickSlotItem != null)
+        {
+            serializableQuickSlotItem.itemID = quickSlotItem.itemID;
+            serializableQuickSlotItem.itemAmount = quickSlotItem.itemAmount;
+
+        }
+        else
+        {
+            serializableQuickSlotItem.itemID = -1;
+        }
+
+        return serializableQuickSlotItem;
+    }
+
+    
 }
