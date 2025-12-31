@@ -14,5 +14,6 @@ public class PlayerUIToggleHUD : MonoBehaviour
     {
         // Bring the HUD back
         PlayerUIManager.instance.playerHudManager.ToggleHUD(true);
+        Debug.Log("Disable Menu");
     }
 }

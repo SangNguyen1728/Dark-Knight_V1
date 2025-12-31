@@ -51576,12 +51576,15 @@ MonoBehaviour:
   legEquipment: {fileID: 0}
   handEquipment: {fileID: 0}
   itemsInInventory:
-  - {fileID: 11400000, guid: b62a3fe040884c04b85227bf8a57bdb4, type: 2}
-  - {fileID: 11400000, guid: 5d719b8a38675594b8d3c4866546ee88, type: 2}
-  - {fileID: 11400000, guid: 9734152a02c1698458ca8df6f59fa278, type: 2}
-  - {fileID: 11400000, guid: fe472d74043ce4b4489987fabfe1dbb5, type: 2}
   - {fileID: 11400000, guid: f4414b9555b2813478ca1e40631fac6c, type: 2}
   - {fileID: 11400000, guid: 2c888f307b8a9c742903a786aa445fb1, type: 2}
+  - {fileID: 11400000, guid: fe472d74043ce4b4489987fabfe1dbb5, type: 2}
+  - {fileID: 11400000, guid: 9734152a02c1698458ca8df6f59fa278, type: 2}
+  - {fileID: 11400000, guid: 5d719b8a38675594b8d3c4866546ee88, type: 2}
+  - {fileID: 11400000, guid: b62a3fe040884c04b85227bf8a57bdb4, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &4425661341344786450
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,12 +10,14 @@ public class PlayerUICharacterMenuManager : MonoBehaviour
     public void OpenCharacterMenu()
     {
         PlayerUIManager.instance.menuWindowIsOpen = true;
+        Debug.Log("Open Menu");
         menu.SetActive(true);
     }
     public void CloseCharaterMenu() 
     {
 
         PlayerUIManager.instance.menuWindowIsOpen = false;
+
         menu.SetActive(false);
     }
 

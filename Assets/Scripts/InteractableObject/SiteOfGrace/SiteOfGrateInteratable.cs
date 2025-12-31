@@ -82,6 +82,7 @@ public class SiteOfGrateInteratable : Interactable
         PlayerUIManager.instance.playerUIPopUpManager.SendGraceRestoredPopUp("SITE OF GRACE RESTORED");
         // Enables/Activaves this site of grace
 
+        WorldSaveGameManager.instance.SaveGame();
 
 
         StartCoroutine(WaitForAnimationAndPopUpThenRestoreCollider());
